@@ -17,7 +17,7 @@ if not ai360_api_key:
 
 async def run_360_search():
     agent = Agent(
-        task='1.访问：https://ucng2j2hu7zx.feishu.cn/drive/home/; 2.新建一个空白表格，将本次调试过程填写到表格中；3.保存文档',
+        task='访问：https://ucng2j2hu7zx.feishu.cn/drive/home/；新建一个空白表格，将本次调试过程填写到表格中；保存文档',
         llm=ChatOpenAI(
             base_url='https://api.360.cn/v1/',  # 修正API基础地址
             model='deepseek-r1',
